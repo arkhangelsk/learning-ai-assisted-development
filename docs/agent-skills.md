@@ -1,73 +1,139 @@
-# Agent Skills Deep Dive
+# Agent Skills: A Practical Guide
 
-An **Agent Skill** is an open, standardized, file-based format used to package and extend an AI agent's capabilities with specialized, repeatable workflows and domain expertise.
-
-Instead of treating an AI agent like a generic chatbot, an agent skill teaches it **procedural memory**—exactly how your team or organization handles specific technical tasks.
+An **agent skill** is a portable, file-based format for packaging specialized workflows and domain expertise so an AI agent can apply them automatically — consistently and without re-explanation. Instead of treating an AI like a generic chatbot, skills teach it *procedural memory*: exactly how your team handles specific tasks.
 
 ---
 
-## The Anatomy of a Skill
+## How Skills Work
 
-At its core, an agent skill is portable and lives inside a version-controlled repository directory. The structure relies on a single folder containing a **`SKILL.md`** file, which can optionally bundle extra resources:
+Skills use a three-stage runtime called **progressive disclosure** to stay lightweight:
+
+1. **Discovery** — At startup, the agent scans your skills directory and loads only the `name` and `description` of each skill into memory (minimal token cost).
+2. **Activation** — When you give a task, the model matches it against available skill descriptions and dynamically loads the full instructions.
+3. **Execution** — The agent follows the structured steps, pulling in any bundled scripts or references only when needed.
+
+This keeps the context window clean while making deep expertise available on demand.
+
+---
+
+## Skill Structure
+
+A skill lives in a single folder inside your version-controlled repo:
 
 ```text
 my-custom-skill/
-├── SKILL.md          <── [Required] Contains metadata and instructions
-├── scripts/          <── [Optional] Executable JS, Python, or Bash scripts
-├── references/       <── [Optional] Specialized docs or API schemas 
-└── assets/           ─── [Optional] Static file templates or seed data
-
+├── SKILL.md          # Required — metadata and instructions
+├── scripts/          # Optional — JS, Python, or Bash scripts
+├── references/       # Optional — API schemas or specialized docs
+└── assets/           # Optional — templates or seed data
 ```
 
-### The `SKILL.md` Blueprint
+The `SKILL.md` file uses a YAML front-matter header to define when the skill activates, followed by the instructions themselves:
 
-The markdown file dictates how and when the agent should invoke the skill, structured with a YAML front-matter header:
-
-```markdown
+```txt
 ---
-name: security-vulnerability-audit
-description: Use this skill when requested to scan package.json files for supply chain vulnerabilities, slopsquatting, or malicious packages before pushing to main.
+name: api-design
+description: Use this skill when designing or modifying REST APIs.
 ---
 
 ## Execution Steps
-1. Scan the dependencies object in package.json.
-2. Check the local cache against known vulnerable npm packages.
-3. If an anomaly or unverified package like a suspicious axios clone is found, halt execution and generate a security warning table.
-
+1. Apply resource-oriented URL structure.
+2. Enforce consistent response envelopes.
+3. Validate inputs before processing.
+4. Return standardized error responses.
 ```
 
 ---
 
-## How it Works: Progressive Disclosure
+## Anatomy of an Effective Skill
 
-To prevent the agent's context window from getting choked by hundreds of different instructions, skills use a three-stage runtime framework called **progressive disclosure**:
+Most successful skills contain five sections.
 
-1. **Discovery:** At startup, tools like Claude Code or Gemini CLI scan your skills directory and load *only* the `name` and `description` of each skill into memory (consuming very few tokens).
-2. **Activation:** When you give the agent a task, the LLM uses its semantic reasoning to match your request against the available skill descriptions. Once matched, it dynamically imports the full `SKILL.md` instructions into the context window.
-3. **Execution:** The agent follows the structured checkpoints, utilizing the tool-embedded `scripts/` or `references/` only at the exact moment they are needed.
+### 1. Purpose
+Defines when the skill should activate. The more specific, the better.
+
+> *"When creating a PowerPoint presentation"* is better than *"when making content."*
+
+### 2. Core Principles
+Captures high-level expert knowledge — typically 3 to 6 rules.
+
+**Example (API Design)**
+- Use resource-oriented URLs
+- Return consistent response structures
+- Use appropriate HTTP status codes
+
+### 3. Implementation Patterns
+Concrete examples and templates. Models learn patterns more reliably from examples than from abstract descriptions.
+
+```json
+{
+  "success": true,
+  "data": {},
+  "meta": { "page": 1, "total": 42 }
+}
+```
+
+### 4. Anti-Patterns
+Explicit "don't do this" guidance. Surprisingly effective — models respond well to it.
+
+**Example (API Design)**
+- Returning raw stack traces
+- Inconsistent error formats
+- Generic `200` responses for every outcome
+- Missing input validation
+
+### 5. Checklist
+A self-review step the agent runs before finishing.
+
+**Example (API Design)**
+- [ ] Status codes are correct
+- [ ] Inputs are validated
+- [ ] Errors are standardized
+- [ ] Pagination metadata is included
 
 ---
 
-## The Crucial Distinction
+## How Skills Differ from Other Concepts
 
-| Concept | What It Is | Best Analogy |
-| --- | --- | --- |
-| **System Prompt** | Global identity and behavioral tone for the entire session. | *The agent's permanent personality and general behavior.* |
-| **RAG (Retrieval)** | Pulling static data or reference text out of a database dynamically. | *Handing the agent an encyclopedia or a reference manual.* |
-| **Model Context Protocol (MCP)** | An open protocol allowing an agent to securely connect to external APIs and host servers. | *Giving the agent hands, tools, and hardware access.* |
-| **Agent Skill** | **Portable, repeatable workflows** that enforce quality gates, logic paths, and strict constraints. | *Teaching the agent a specific professional trade or standard operating procedure.* |
+| Concept | What It Is |
+|---|---|
+| **System Prompt** | Global identity and behavioral tone for the entire session |
+| **RAG** | Pulling reference text from a database dynamically |
+| **MCP** | Protocol connecting an agent to external APIs and tools |
+| **Agent Skill** | Portable, repeatable workflows enforcing quality gates and logic paths |
+
+Skills are the difference between an agent that *can* do something and one that does it *your way*, every time.
 
 ---
 
-## Common Engineering Use Cases
+## Common Use Cases
 
-In AI-assisted development, engineering teams use packs of agent skills to turn an erratic LLM into a disciplined developer that complies with corporate guardrails:
+- **Lifecycle enforcement** — Require a spec and plan before writing any code
+- **Security audits** — Standardize scanning for supply chain vulnerabilities
+- **Test-driven development** — Enforce write-test → verify failure → implement → commit
+- **Presentation creation** — Apply layout, typography, and hierarchy rules automatically
+- **API design** — Catch the same recurring review issues before they happen
+- **Documentation standards** — Consistent structure and tone across all docs
 
-* **Lifecycle Enforcement:** Forcing an agent to build a comprehensive specification (`/spec`) and a rigorous blueprint (`/plan`) before writing a single line of actual code.
-* **Security & Automation Audits:** Standardizing how an agent scans for supply chain attacks or registers dependencies in an infrastructure pipeline.
-* **Test-Driven Development (TDD):** Requiring the agent to write a failing test first, verify the failure, implement the minimum code to make it pass, and commit incrementally.
+---
 
-> **Security Guardrail Note:** Because agent skills can execute bundled code (`scripts/`) with access to your local file systems and API environment keys, you should treat custom skills like installing third-party software—always audit the `SKILL.md` steps and attached execution code thoroughly from untrusted sources.
+## Creating Your First Skill
+
+Start by identifying where reviews repeatedly catch the same issues. Ask:
+
+- What standards do we enforce over and over?
+- What mistakes come up most often?
+- What does "good output" look like in this domain?
+
+Then encode the answer once. A skill with three clear principles that gets used every day is more valuable than a comprehensive document that never gets maintained.
+
+> **Start small. Capture the highest-leverage expertise. Let the AI apply it automatically.**
+
+---
+
+## Security Note
+
+Skills that bundle executable scripts (`scripts/`) have access to your local file system and environment variables. Treat third-party skills like third-party software — always audit the `SKILL.md` steps and any bundled code before use.
 
 ---
 ## Agent Skills Registry
