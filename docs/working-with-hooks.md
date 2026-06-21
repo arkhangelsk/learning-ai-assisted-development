@@ -24,7 +24,7 @@ You can define hooks using multiple types of handlers: [1]
 4. MCP Tool: Call a tool on an already-connected Model Context Protocol (MCP) server. This allows you to integrate with any external system or API that has a tool interface, such as a CI/CD pipeline, monitoring dashboard, or custom internal service.
 
 ## Setting Them Up
-Hooks are configured in your JSON settings files—either globally (~/.claude/settings.json) or per-project (.claude/settings.json). [1, 2]
+Hooks are configured in your JSON settings files—either globally (~/.claude/settings.json) or per-project (.claude/settings.json). 
 For example, this configuration automatically runs Prettier on files after Claude edits them: 
 
 ```json
