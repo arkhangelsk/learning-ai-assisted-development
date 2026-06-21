@@ -8,9 +8,9 @@
 6. [Setting Up Your AI Development Environment](./docs/setting-up-ai-development-environment.md) - a step-by-step guide to configuring your IDE, installing necessary plugins, and integrating AI tools into your workflow.
 7. [The Limits of AI-Generated Code](./docs/the-limits-of-ai-generated-code.md)
 8. [Prompting Patterns That Improve AI Code Output](./docs/prompt-patterns.md)
-9. [AI Watchlist](./docs/ai-watchlist.md) - a curated list of top AI builders and content sources (blogs, podcasts, YouTube, X) to follow for insights and updates in the AI space. 
-10. [Context Engineering](./docs/context-engineering.md) - a guide to structuring and providing context to AI models for improved code generation and problem-solving.
-11. [Agentic Development Workflow](./docs/agentic-development-workflow.md) - a step-by-step plan for integrating AI into your software development process, from inline code suggestions to full agent mode.
+9.  [Context Engineering](./docs/context-engineering.md) - a guide to structuring and providing context to AI models for improved code generation and problem-solving.
+10. [Agentic Development Workflow](./docs/agentic-development-workflow.md) - a step-by-step plan for integrating AI into your software development process, from inline code suggestions to full agent mode.
+11. [AI Watchlist](./docs/ai-watchlist.md) - a curated list of top AI builders and content sources (blogs, podcasts, YouTube, X) to follow for insights and updates in the AI space. 
 
 ## Prompts for AI Assisted Development:
 1. [Code Review Prompt](./Prompts/code-review-prompt.md)
