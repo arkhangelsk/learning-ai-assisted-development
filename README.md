@@ -11,8 +11,10 @@
 9. [Context Engineering](./docs/context-engineering.md) - a guide to structuring and providing context to AI models for improved code generation and problem-solving.
 10. [Agentic Development Workflow](./docs/agentic-development-workflow.md) - a step-by-step plan for integrating AI into your software development process, from inline code suggestions to full agent mode.
 11. [Spec-Driven Development](./docs/spec-driven-development.md) - how to create detailed specifications that enable AI models to generate complete applications or prototypes, and best practices for writing effective specs.
-12. [Productivity Tips for Claude Code](./docs/claude-productivity-tips.md) - tips and tricks for getting the most out of Claude Code, including model switching, context management, and debugging techniques.
-13. [AI Watchlist](./docs/ai-watchlist.md) - a curated list of top AI builders and content sources (blogs, podcasts, YouTube, X) to follow for insights and updates in the AI space. 
+12. [The Agent Coding Maturity Curve](./docs/agent-coding-maturity-curve.md) - a framework for understanding the stages of AI-assisted development, from initial experimentation to fully integrated agentic workflows (See original article [here](https://engineering.salesforce.com/the-agent-coding-maturity-curve-9-stages-from-code-generation-to-trusted-automation/)).
+13. [Productivity Tips for Claude Code](./docs/claude-productivity-tips.md) - tips and tricks for getting the most out of Claude Code, including model switching, context management, and debugging techniques.
+14. [AI-Powered Testing and Debugging](./docs/ai-powered-testing-and-debugging.md) - how to use AI tools to automate testing, identify bugs, and generate fixes, including best practices for integrating these tools into your development workflow.
+15. [AI Watchlist](./docs/ai-watchlist.md) - a curated list of top AI builders and content sources (blogs, podcasts, YouTube, X) to follow for insights and updates in the AI space. 
 
 ## Prompts for AI Assisted Development
 1. [Code Review Prompt](./Prompts/code-review-prompt.md)
