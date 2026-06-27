@@ -140,9 +140,27 @@ Skills that bundle executable scripts (`scripts/`) have access to your local fil
 * [Vercel's Skill Library](https://www.skills.sh/) - A collection of open-source agent skills covering a wide range of applications and industries.
 * [Awesome Copilot](https://github.com/github/awesome-copilot/tree/main/skills) - A community-curated directory of open-source agent skills for various use cases, from software development to data analysis and beyond.
 * [Anthropic's Skill Library](https://github.com/anthropics/skills/tree/main/skills) - A collection of pre-built skills designed for use with the Claude family of AI agents, covering a wide range of applications and industries.
-
 ---
+
+## Popular Agent Skills Repositories
+
+### Design Skills:
+* [GetDesign.md](https://getdesign.md/) - A collection of design-related agent skills.
+* [Stitch Design.md](https://stitch.withgoogle.com/docs/design-md/overview) - A set of design-related agent skills by Google.
+* [Google Labs Design.md](https://github.com/google-labs-code/design.md) - A collection of design-related agent skills by Google Labs.
+* [Open Design](https://github.com/nexu-io/open-design/tree/main/skills/8-bit-orbit-video-template) - A collection of open-source design-related agent skills.
+
+### SDLC Skills:
+* [Addy Osmani's Agent Skills](https://github.com/addyosmani/agent-skills) - A collection of agent skills for software development lifecycle tasks.
+* [Superpowers](https://github.com/obra/Superpowers) - A set of agent skills for enhancing development workflows.
+* [Andrej Karpathy's Skills](https://github.com/multica-ai/andrej-karpathy-skills) - Agent skills based on Andrej Karpathy's work for various development tasks.
+* [GStack](https://github.com/garrytan/gstack) - A collection of agent skills for full-stack development.
+* [GSD Core](https://github.com/open-gsd/gsd-core) - Core agent skills for managing software development processes.
+* [Matt Pocock's Skills](https://github.com/mattpocock/skills) - A set of agent skills for various development tasks.
+* [Warp's OZ for OSS](https://github.com/warpdotdev/oz-for-oss/tree/main/.agents/skills) - A collection of open-source agent skills for various use cases, maintained by Warp.
+
 ## Agent Skill Scanners
-
+* [Cisco's Skill Scanner](https://github.com/cisco-ai-defense/skill-scanner) - A security scanner for AI agent skills that detects vulnerabilities, malicious patterns, and security risks before installing agent skills.
 * [SkillSpector](https://github.com/nvidia/skillspector) - Security scanner for AI agent skills. Detect vulnerabilities, malicious patterns, and security risks before installing agent skills.
-
+* [Agent Scan Skill Inspector](https://labs.snyk.io/experiments/skill-scan/) - A tool by Snyk for inspecting AI agent skills for security vulnerabilities and risks.
+* [NVIDIA's Agent Skill Scanner](https://docs.nvidia.com/skills/scanning-agent-skills) - A tool by NVIDIA for scanning AI agent skills for security vulnerabilities and risks.

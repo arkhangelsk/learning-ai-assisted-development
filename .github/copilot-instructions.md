@@ -8,6 +8,7 @@ This is an educational documentation repository about AI-assisted software devel
 
 - `docs/` — Long-form guides and reference articles (Markdown)
 - `Prompts/` — Reusable prompt templates for AI-assisted workflows
+- `Skills/` — Agent skills for AI-assisted workflows
 - `README.md` — Index of all docs; update this when adding new files
 
 ## Writing Style
