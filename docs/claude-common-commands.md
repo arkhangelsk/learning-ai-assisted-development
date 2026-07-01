@@ -1,9 +1,10 @@
 # Claude Common Slash Commands
-Claude Code has many built-in slash commands. Here are some of the most commonly used ones:
+
+Slash commands are built-in shortcuts you type directly into the Claude Code chat interface to manage sessions, context, and permissions without leaving the conversation. Use this reference when you need a quick reminder of what's available or want to discover commands beyond everyday prompting.
 
 1. **/help** - Displays a list of available commands and their descriptions.
 2. **`claude --resume`** - Opens an interactive picker to choose from saved sessions.
-3. **/model [model_name]** - Switches the active model to the specified one (e.g., `claude-2`, `claude-instant-100k`).
+3. **/model [model_name]** - Switches the active model to the specified one (e.g., `claude-sonnet-4-5`, `claude-opus-4-1`).
 4. **/compact** - Compacts the current context to save memory and improve performance.
 5. **/context** - Shows the current context that Claude is using for code generation.
 6. **/clear** - Clears the current context and conversation history.
