@@ -4,11 +4,13 @@ This repo is organized into three parts: `docs/` (long-form guides, grouped belo
 
 ### Table of Contents
 
-- [Foundations](#foundations)
-- [Getting Started and Setup](#getting-started-and-setup)
-- [Workflow and Patterns](#workflow-and-patterns)
-- [Maturity and Productivity](#maturity-and-productivity)
-- [Further Resources](#further-resources)
+- [AI-Assisted Development: A Guide to Using AI for Software Development](#ai-assisted-development-a-guide-to-using-ai-for-software-development)
+  - [Table of Contents](#table-of-contents)
+  - [Foundations](#foundations)
+  - [Getting Started and Setup](#getting-started-and-setup)
+  - [Workflow and Patterns](#workflow-and-patterns)
+  - [Maturity and Productivity](#maturity-and-productivity)
+  - [Further Resources](#further-resources)
 - [Prompts for AI-Assisted Development](#prompts-for-ai-assisted-development)
 - [Agent Skills](#agent-skills)
 
@@ -19,6 +21,7 @@ Core concepts for understanding how AI coding tools work and where they fall sho
 | Doc                                                                                   | Description                                                                                                                                                        |
 | ------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [AI Changed Engineering. Here's What Matters Now](./docs/ai-changed-engineering.md)   | How AI tools are changing the software development landscape, which skills are becoming more important, and how to adapt to this new environment.                  |
+| [When to Use Agents](./docs/when-use-agents.md)                                                | A guide to identifying workflows that are good candidates for autonomous AI agents, and those that are not.                                                        |
 | [Agentic Development Terminologies](./docs/agentic-development-terminologies.md)      | A glossary of key agentic development terms (AI Agent, Agentic Loop, Ralph Loop, MCP, Agent Skills) for quick reference.                                           |
 | [LLMs Under the Hood: How AI Coding Models Actually Work](./docs/llm-fundamentals.md) | An introduction to how large language models (LLMs) generate code, including their strengths, limitations, and how to use them effectively.                        |
 | [The Limits of AI-Generated Code](./docs/the-limits-of-ai-generated-code.md)          | A deep dive into the common failure modes of AI-generated code and how to defend against them through careful review and testing.                                  |

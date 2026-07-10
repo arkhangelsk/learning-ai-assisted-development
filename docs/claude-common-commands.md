@@ -1,4 +1,16 @@
-# Claude Common Slash Commands
+# Claude Common Commands
+
+## Install any MCP Server
+### Playwright
+```
+claude mcp add playwright npx @playwright/mcp@latest
+```
+### Chrome DevTools Protocol
+```
+claude mcp add chrome-devtools --scope user npx chrome-devtools-mcp@latest
+```
+
+# Claude Slash Commands
 
 Slash commands are built-in shortcuts you type directly into the Claude Code chat interface to manage sessions, context, and permissions without leaving the conversation. Use this reference when you need a quick reminder of what's available or want to discover commands beyond everyday prompting.
 
