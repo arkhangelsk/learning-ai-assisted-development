@@ -29,3 +29,6 @@ Slash commands are built-in shortcuts you type directly into the Claude Code cha
 13. **/test** - Runs the test suite for the current project (requires permission).
 14. **/lint** - Runs the linter for the current project (requires permission).
 15. **/deploy** - Deploys the current project to the configured environment (requires permission).
+16. **/rename** - Renames the current conversation.
+17. **/loop** - Run a prompt or slash command on a recurring interval (e.g. /loop 5m /foo). Omit the interval tolet the model self-pace.
+

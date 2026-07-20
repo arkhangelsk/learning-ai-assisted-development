@@ -64,6 +64,7 @@ As a software engineer, it's important to understand:
 
 - LinkedIn Learning: [AI-Native Engineering Foundations](https://www.linkedin.com/learning/ai-native-engineering-foundations)
 - LinkedIn Learning: [Mastering AI-Assisted Development](https://www.linkedin.com/learning/mastering-ai-assisted-development/)
+- LinkedIn Learning: [Maximize Your Claude Code Programming Productivity](https://www.linkedin.com/learning/maximize-your-claude-code-programming-productivity)
 - Microsoft: [Generative AI for Beginners](https://github.com/microsoft/generative-ai-for-beginners) or check: [https://learn.microsoft.com/en-us/shows/generative-ai-for-beginners/](https://learn.microsoft.com/en-us/shows/generative-ai-for-beginners/) 
 - DeepLearning: [Generative AI for Software Development](https://www.deeplearning.ai/specializations/generative-ai-for-software-development)
 - Anthropic Academy: [Claude Code in Action](https://anthropic.skilljar.com/claude-code-in-action)
@@ -71,12 +72,13 @@ As a software engineer, it's important to understand:
 - See More Course from Anthropic Academy: [https://anthropic.skilljar.com/](https://anthropic.skilljar.com/) 
 - Github Copilot Courses from VS Code Team: [https://code.visualstudio.com/learn](https://code.visualstudio.com/learn) 
 - LinkedIn: [Building Agentic AI Systems for Tech Leaders](https://www.linkedin.com/learning/paths/building-agentic-ai-systems-for-tech-leaders)
-
 - Microsoft: [AI concepts for developers and technology professionals](https://learn.microsoft.com/en-us/training/paths/ai-concepts/)
-
 - Microsoft: [Get started with AI-assisted development](https://learn.microsoft.com/en-us/training/paths/accelerate-app-development-using-github-copilot/)
-
 - Microsoft: [AI Fluency](https://learn.microsoft.com/en-us/training/paths/ai-fluency/)
+
+### Github Repositories:
+* [Addy Osmani: Mastering AI-Assisted Development](https://github.com/LinkedInLearning/mastering-ai-assisted-development-10666010)
+* [Denys Linkov: Maximize Your Claude Code Programming Productivity](https://github.com/LinkedInLearning/maximize-your-claude-code-programming-productivity-9332041)
 
 # Learning Platforms:
 
@@ -85,8 +87,8 @@ As a software engineer, it's important to understand:
 - [Anthropic Academy](https://www.anthropic.com/learn)
 - [OpenAI Academy](https://academy.openai.com/)
 - [IBM SkillsBuild](https://skillsbuild.org/)
-- Microsoft Learning Academy
-- Google AI Learning Academy
-- Udemy
-- Oreilly
-- LinkedIn Learning
+- [Microsoft Learning Academy](https://learn.microsoft.com/en-us/training/browse/?terms=Artificial&roles=ai-engineer)
+- [Google AI Learning Academy](https://ai.google/education/)
+- [O'Reilly](https://www.oreilly.com/)
+- [LinkedIn Learning](https://www.linkedin.com/learning/)
+- [Udemy](https://www.udemy.com/)
